@@ -37,6 +37,7 @@ dependencies:
   flutter_svg: ^0.17.4
   google_fonts: ^3.0.1
   fluttertoast: ^8.0.9
+  rflutter_alert: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +65,7 @@ flutter:
   assets:
     - assets/images/tampak_dalam/
     - assets/images/menu_makanan/
+    - assets/images/home/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,6 +1,4 @@
-import 'dart:ffi';
-
-import 'package:waroengku_app/menu.dart';
+import 'package:waroengku_app/menu/menu.dart';
 
 class MenuMakanan {
   String nama;

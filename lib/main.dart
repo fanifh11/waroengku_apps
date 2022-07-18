@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:waroengku_app/home.dart';
-import 'package:waroengku_app/menu.dart';
+import 'package:flutter/services.dart';
+import 'package:waroengku_app/halaman_home.dart';
+import 'package:waroengku_app/menu/menu.dart';
 
 void main() {
   runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Menu(),
+      home: Scaffold(body: Home()),
     );
   }
 }

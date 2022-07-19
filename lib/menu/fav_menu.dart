@@ -111,7 +111,7 @@ class FavMenu extends StatelessWidget {
                   Container(
                     child: Image(
                       image:
-                          AssetImage('assets/images/menu_makanan/padang.png'),
+                          AssetImage('assets/images/menu_makanan/rendang.png'),
                       width: 220,
                     ),
                   ),

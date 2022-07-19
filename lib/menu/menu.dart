@@ -17,17 +17,14 @@ class Menu extends StatefulWidget {
 class _MenuState extends State<Menu> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        resizeToAvoidBottomInset: false,
-        body: Container(
-          child: Column(children: [
-            HeaderMenu(),
-            FavMenu(makanan: menuMakananList[0]),
-            ListMenu()
-          ]),
-        ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Container(
+        child: Column(children: [
+          HeaderMenu(),
+          FavMenu(makanan: menuMakananList[0]),
+          ListMenu()
+        ]),
       ),
     );
   }
